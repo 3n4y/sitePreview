@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Connect to website</title>
+    <title>Title</title>
 </head>
 <body>
 
@@ -12,12 +12,12 @@
 
 
 <!-- Start of Railz Connect script -->
-<script src="https://connect.qa.railz.ai/v1/railz-connect.js"></script>
+<script src="https://connect.qa2.railz.ai/v1/railz-connect.js"></script>
 <script>
     var widget = new RailzConnect();
     widget.mount({
         parentElement: document.getElementById('railz-connect'),
-        widgetId: 'sb_qa_b6728a07-982d-49c0-9991-afb3960d1836',
+        widgetId: 'sb_qa2_68db52b7-32f0-4184-bfe6-6e11f217f1c2',
         closeEnabled: true,
         closeRedirectUrl: '/',
         removeRailzWatermark: true,
@@ -30,7 +30,6 @@
         onError: (event, data) => {
             console.error(event, data);
         },
-        { components: { sandbox: true } },
     });
 </script>
 <!-- End of Railz Connect script -->
