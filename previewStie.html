@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect to website</title>
+</head>
+<body>
+
+
+<!-- Insert this div where you want Railz Connect to be initialized -->
+<div id="railz-connect"></div>
+
+
+<!-- Start of Railz Connect script -->
+<script src="https://connect.qa.railz.ai/v1/railz-connect.js"></script>
+<script>
+    var widget = new RailzConnect();
+    widget.mount({
+        parentElement: document.getElementById('railz-connect'),
+        widgetId: 'wid_qa_00c0563c-28a8-4ec4-bf52-71f1297e124d',
+        closeEnabled: true,
+        closeRedirectUrl: '/',
+        removeRailzWatermark: true,
+        onExit: (event, data) => {
+            console.log(event, data);
+        },
+        onSuccess: (event, data) => {
+            console.log(event, data);
+        },
+        onError: (event, data) => {
+            console.error(event, data);
+        },
+    });
+</script>
+<!-- End of Railz Connect script -->
+</body>
+</html>
